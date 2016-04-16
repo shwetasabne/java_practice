@@ -1,0 +1,8 @@
+package hash;
+
+import linkedlist.ListNode;
+
+public class HashTable {
+
+	private ListNode [] table;
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;PrepMaterial/src/recursion&apos;&#x0A;- Original project: &apos;randomrecursiondp&apos;&#x0A;- Destination element: &apos;PrepMaterial/src/recursion&apos;&#x0A;- Original elements:&#x0A;     LemurSelection.java&#x0A;     StringMingling.java" description="Copy compilation units" destination="=PrepMaterial/src&lt;recursion" element1="/src&lt;{LemurSelection.java" element2="/src&lt;{StringMingling.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1439771066931" units="2" version="1.0"/>
+</session>

@@ -1,0 +1,6 @@
+package hash;
+
+public class HashTable {
+
+	private ListNode [] table;
+}

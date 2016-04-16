@@ -1,0 +1,15 @@
+package hash;
+
+import linkedlist.ListNode;
+
+public class HashTable {
+
+	private ListNode [] table;
+	
+	// Default initialization of 64
+	public HashTable(){
+		table = new ListNode[64];
+	}
+	
+	
+}

@@ -1,0 +1,52 @@
+package hash;
+
+
+public class HashTable {
+
+	private  class ListNode {	
+		String key;
+		String value;
+		ListNode next;
+	}
+	
+	// the table looks like this
+	// table[1] = ListNode_latest
+	//			And this List_Node_latest points to  -> ListNode_secondLast ->... ->ListNode_first element -> null 
+	//			Thus representing latest node in a Linked List
+	//			We are adding nodes at start of the linked list
+	// the table index is the hashcode of the key
+	private ListNode [] table;
+	
+	// Default initialization of 64
+	public HashTable(){
+		table = new ListNode[64];
+	}
+	
+	//If size is given then use that
+	public HashTable(int size) throws Exception{
+		if(size <= 0){
+			throw new Exception("Size cannot be less than or equal to 0");
+		}
+	}
+	
+	// I will take the hashcode of the string and then mod it by 10
+	// I will implement repeated doubling for the hash table size
+	private int hash(Object key){
+		return (Math.abs(key.hashCode())) % 10;	
+	}
+	
+	public void put(String key, String value){
+		
+		int bucket = hash(key);
+		
+		ListNode node = table[bucket];
+		
+		// Check if this above list, is not null iterate to see if the key is already added
+		if(node != null){
+			if(node.key.equals(key)){
+				
+			}
+		}
+		
+	}
+}

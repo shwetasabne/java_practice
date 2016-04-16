@@ -1,0 +1,56 @@
+package stack;
+
+public class ArrayStack {
+
+	private int top;
+	private int capacity;
+	private int[] array;
+	
+	public ArrayStack(int capacity){
+		this.capacity = capacity;
+		array = new int[this.capacity];
+		top = -1;
+	}
+	
+	public boolean isEmpty(){
+		//Stack will be empty if top is not updated
+		return (top == -1);
+	}
+	
+	public boolean isStackFull(){
+		
+		return (top == capacity - 1);
+	}
+	
+	public void push(int data){
+		if(isStackFull()){
+			System.out.println("Stack overflow");
+		}
+		else
+		{
+			array[++top] = data;
+		}
+	}
+	
+	public int pop(){
+		if(isEmpty()){
+			System.out.println("Stack is empty");
+			return 0;
+		}
+		else{
+			return (array[top--]);
+		}
+	}
+	
+	public void deleteStack(){
+		top = -1;
+	}
+	
+	public void printStack(){
+		
+		for(int i=0; i <= top; i++){
+			System.out.print(this.array[i] + " :: ");
+		}
+		System.out.println();
+	}
+}
